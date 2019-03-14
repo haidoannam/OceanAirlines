@@ -21,11 +21,13 @@ namespace NC.OS.Services.Services
     public class OrderService : IOrderService
     {
         private readonly IEntityBaseRepository<Order> _orderRepository;
+        private readonly IEntityBaseRepository<Paths> _pathRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public OrderService(IEntityBaseRepository<Order> orderRepository, IUnitOfWork unitOfWork)
+        public OrderService(IEntityBaseRepository<Order> orderRepository, IEntityBaseRepository<Paths> pathRepository,IUnitOfWork unitOfWork)
         {
             _orderRepository = orderRepository;
+            _pathRepository = pathRepository;
             _unitOfWork = unitOfWork;
         }
 
@@ -131,7 +133,28 @@ namespace NC.OS.Services.Services
         }
         private decimal CalculateTime(string from, string to)
         {
+            var path = _pathRepository.FindBy(x => x.PFrom == from && x.PTo == to).FirstOrDefault();
+            
+            if (path != null)
+            {
+                return path.Size * 8;
+            }
+            //if (path != null)
+            //{
+            //    if (!string.IsNullOrEmpty(path.Route))
+            //    {
+            //        var routes = path.Route.Split(',').ToList();
+            //        if (routes.Any())
+            //        {
+            //            foreach(var routesItem in routes)
+            //            {
+            //                var route = routesItem.TrimStart('(').TrimEnd(')').Split(',');
 
+            //            }
+            //        }
+
+            //    }
+            //}
 
             return 0;
         }
