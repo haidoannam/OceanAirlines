@@ -57,6 +57,10 @@ namespace NC.OS.API.App_Start
                .As<IOrderService>()
                .InstancePerRequest();
 
+            builder.RegisterType<PlacesService>()
+               .As<IPlacesService>()
+               .InstancePerRequest();
+
 
             Container = builder.Build();
 
