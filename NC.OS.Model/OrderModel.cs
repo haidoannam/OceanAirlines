@@ -17,8 +17,8 @@ namespace NC.OS.Model
 
     public class OrderResultModel
     {
-        public double Total { get; set; }
-        public double Time { get; set; }
+        public decimal Total { get; set; }
+        public decimal Time { get; set; }
     }
 
     public class OrderViewModel
@@ -56,19 +56,19 @@ namespace NC.OS.Model
     {
         public string Name { get; set; }
 
-        public double Weight { get; set; }
+        public decimal Weight { get; set; }
 
         public string From { get; set; }
 
         public string To { get; set; }
 
-        public double Height { get; set; }
+        public decimal Height { get; set; }
 
-        public double Depth { get; set; }
+        public decimal Depth { get; set; }
 
-        public double Breadth { get; set; }
+        public decimal Breadth { get; set; }
 
-        public double Total { get; set; }
+        public decimal Total { get; set; }
 
         public int Time { get; set; }
     }

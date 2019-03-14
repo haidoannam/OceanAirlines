@@ -23,6 +23,7 @@ namespace NC.OS.Data.Context
         public IDbSet<Order> OrderSet { get; set; }
         public IDbSet<Places> PlacesSet { get; set; }
 
+        public IDbSet<Paths> PathsSet { get; set; }
         #endregion
 
         public virtual void Commit()
@@ -36,6 +37,7 @@ namespace NC.OS.Data.Context
             modelBuilder.Configurations.Add(new UserConfiguration());
             modelBuilder.Configurations.Add(new OrderConfiguration());
             modelBuilder.Configurations.Add(new PlacesConfiguration());
+            modelBuilder.Configurations.Add(new PathsConfiguration());
 
         }
     }

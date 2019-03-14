@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Configurations\EntityBaseConfiguration.cs" />
     <Compile Include="Configurations\OrderConfiguration.cs" />
+    <Compile Include="Configurations\PathsConfiguration.cs" />
     <Compile Include="Configurations\PlacesConfiguration.cs" />
     <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="Context\OceanAirlinesContext.cs" />

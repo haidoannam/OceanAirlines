@@ -21,11 +21,13 @@ namespace NC.OS.Services.Services
     public class OrderService : IOrderService
     {
         private readonly IEntityBaseRepository<Order> _orderRepository;
+        private readonly IEntityBaseRepository<Paths> _pathRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public OrderService(IEntityBaseRepository<Order> orderRepository, IUnitOfWork unitOfWork)
+        public OrderService(IEntityBaseRepository<Order> orderRepository, IEntityBaseRepository<Paths> pathRepository,IUnitOfWork unitOfWork)
         {
             _orderRepository = orderRepository;
+            _pathRepository = pathRepository;
             _unitOfWork = unitOfWork;
         }
 
@@ -76,6 +78,46 @@ namespace NC.OS.Services.Services
 
             return result.ToList();
         }
+
+        public OrderModel GetOrderDetail(string id)
+        {
+            var guidId = Guid.Parse(id);
+            var result = _orderRepository.FindBy(x => x.Id == guidId).FirstOrDefault();
+            if (result !=null)
+            {
+                var orderModel = new OrderModel
+                {
+                    Sender = new SenderModel
+                    {
+                        Name = result.SenderName,
+                        Phone = result.SenderPhone
+                    },
+                    Receiver = new ReceiverModel
+                    {
+                        Name = result.ReceiverName,
+                        Phone = result.ReceiverPhone,
+                        Address = result.ReveiverAddress
+                    },
+                    Package = new PackageModel
+                    {
+                        From = result.Departure,
+                        To = result.Arrival,
+                        Breadth = result.Breadth,
+                        Height = result.Height,
+                        Weight = result.Weight,
+                        Depth = result.Depth,
+                        Total = result.ToTal,
+                        Time = result.Time,
+
+                    }
+                };
+
+                return orderModel;
+            }
+
+            return null;
+        }
+
         public OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel)
         {
             var result = new OrderResultModel
@@ -89,13 +131,34 @@ namespace NC.OS.Services.Services
             return result;
 
         }
-        private double CalculateTime(string from, string to)
+        private decimal CalculateTime(string from, string to)
         {
+            var path = _pathRepository.FindBy(x => x.PFrom == from && x.PTo == to).FirstOrDefault();
+            
+            if (path != null)
+            {
+                return path.Size * 8;
+            }
+            //if (path != null)
+            //{
+            //    if (!string.IsNullOrEmpty(path.Route))
+            //    {
+            //        var routes = path.Route.Split(',').ToList();
+            //        if (routes.Any())
+            //        {
+            //            foreach(var routesItem in routes)
+            //            {
+            //                var route = routesItem.TrimStart('(').TrimEnd(')').Split(',');
 
+            //            }
+            //        }
+
+            //    }
+            //}
 
             return 0;
         }
-        private double CalculatePrice(double weight, string sizeType)
+        private decimal CalculatePrice(decimal weight, string sizeType)
         {
             if (sizeType == "C")
                 if (weight > 5)
@@ -127,7 +190,7 @@ namespace NC.OS.Services.Services
             return 0;
 
         }
-        private string CalculateSize(double height, double depth, double breath)
+        private string CalculateSize(decimal height, decimal depth, decimal breath)
         {
             var sizeTypeHeight = CalculateHeightType(height);
             var sizeTypeDepth = CalculateHeightType(depth);
@@ -148,7 +211,7 @@ namespace NC.OS.Services.Services
             return "A";
         }
 
-        private string CalculateHeightType(double height)
+        private string CalculateHeightType(decimal height)
         {
             if (height > 200)
                 return "C";
