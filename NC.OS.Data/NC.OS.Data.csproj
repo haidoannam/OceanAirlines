@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations\EntityBaseConfiguration.cs" />
+    <Compile Include="Configurations\OrderConfiguration.cs" />
     <Compile Include="Configurations\UserConfiguration.cs" />
     <Compile Include="Context\OceanAirlinesContext.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />

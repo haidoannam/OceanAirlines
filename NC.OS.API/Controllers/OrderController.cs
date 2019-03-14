@@ -21,6 +21,23 @@ namespace NC.OS.API.Controllers
             _orderService = orderService;
         }
 
+        [Route("create")]
+        [HttpPost]
+        public HttpResponseMessage CreateOrder(OrderModel model)
+        {
+            HttpResponseMessage response = null;
+
+            if (ModelState.IsValid)
+            {
+                 _orderService.SaveOrder(model);
+
+                response = Request.CreateResponse(HttpStatusCode.OK, new { success = true });
+            }
+            else
+                response = Request.CreateResponse(HttpStatusCode.BadRequest, new { success = false });
+
+            return response;
+        }
 
         [Route("Estimate")]
         [HttpGet]

@@ -9,6 +9,8 @@ namespace NC.OS.Services.Interface
 {
     public interface IOrderService
     {
+        void SaveOrder(OrderModel orderModel);
+
         OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel);
 
     }

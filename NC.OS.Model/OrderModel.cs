@@ -21,6 +21,12 @@ namespace NC.OS.Model
         public double Time { get; set; }
     }
 
+    public class OrderViewModel
+    {
+        public double Total { get; set; }
+        public double Time { get; set; }
+    }
+
     public class SenderModel
     {
         public string Name { get; set; }
@@ -53,5 +59,9 @@ namespace NC.OS.Model
         public double Depth { get; set; }
 
         public double Breadth { get; set; }
+
+        public double Total { get; set; }
+
+        public int Time { get; set; }
     }
 }

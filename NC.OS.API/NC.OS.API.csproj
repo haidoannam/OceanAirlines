@@ -281,15 +281,15 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="service-worker.js" />
-    <Content Include="static\css\3.e47ef92e.chunk.css" />
+    <Content Include="static\css\3.5e42acd0.chunk.css" />
     <Content Include="static\css\4.e910d331.chunk.css" />
-    <Content Include="static\css\main.b5959a3a.chunk.css" />
-    <Content Include="static\js\2.afa1a219.chunk.js" />
-    <Content Include="static\js\3.2c002df4.chunk.js" />
-    <Content Include="static\js\4.95866aae.chunk.js" />
-    <Content Include="static\js\5.fd191e75.chunk.js" />
-    <Content Include="static\js\main.f8ca9ad1.chunk.js" />
-    <Content Include="static\js\runtime~main.3127f013.js" />
+    <Content Include="static\css\main.ed688923.chunk.css" />
+    <Content Include="static\js\2.69fc5555.chunk.js" />
+    <Content Include="static\js\3.90cb3948.chunk.js" />
+    <Content Include="static\js\4.50fe3399.chunk.js" />
+    <Content Include="static\js\5.837a8f35.chunk.js" />
+    <Content Include="static\js\main.085177e9.chunk.js" />
+    <Content Include="static\js\runtime~main.ccb9b7b0.js" />
     <Content Include="static\media\logo-trends-featured.6d9bf479.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -308,18 +308,18 @@
     <Content Include="wa-oavn.PublishSettings">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="static\css\3.e47ef92e.chunk.css.map" />
-    <Content Include="static\css\4.e910d331.chunk.css.map" />
-    <Content Include="static\css\main.b5959a3a.chunk.css.map" />
-    <Content Include="static\js\2.afa1a219.chunk.js.map" />
-    <Content Include="static\js\3.2c002df4.chunk.js.map" />
-    <Content Include="static\js\4.95866aae.chunk.js.map" />
-    <Content Include="static\js\5.fd191e75.chunk.js.map" />
-    <Content Include="static\js\main.f8ca9ad1.chunk.js.map" />
-    <Content Include="static\js\runtime~main.3127f013.js.map" />
     <Content Include="static\media\Quicksand-Bold.0c044626.ttf" />
     <Content Include="static\media\Quicksand-Medium.0c642332.ttf" />
     <Content Include="static\media\Quicksand-Regular.f87b9b4f.ttf" />
+    <Content Include="static\css\3.5e42acd0.chunk.css.map" />
+    <Content Include="static\css\4.e910d331.chunk.css.map" />
+    <Content Include="static\css\main.ed688923.chunk.css.map" />
+    <Content Include="static\js\2.69fc5555.chunk.js.map" />
+    <Content Include="static\js\3.90cb3948.chunk.js.map" />
+    <Content Include="static\js\4.50fe3399.chunk.js.map" />
+    <Content Include="static\js\5.837a8f35.chunk.js.map" />
+    <Content Include="static\js\main.085177e9.chunk.js.map" />
+    <Content Include="static\js\runtime~main.ccb9b7b0.js.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

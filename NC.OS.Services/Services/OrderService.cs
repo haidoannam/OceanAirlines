@@ -20,16 +20,50 @@ namespace NC.OS.Services.Services
 
     public class OrderService : IOrderService
     {
-        private readonly IEntityBaseRepository<User> _userRepository;
+        private readonly IEntityBaseRepository<Order> _orderRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public OrderService(IEntityBaseRepository<User> userRepository, IUnitOfWork unitOfWork)
+        public OrderService(IEntityBaseRepository<Order> orderRepository, IUnitOfWork unitOfWork)
         {
-            _userRepository = userRepository;
+            _orderRepository = orderRepository;
             _unitOfWork = unitOfWork;
         }
 
-        
+        public void SaveOrder(OrderModel orderModel)
+        {
+            var orders = _orderRepository.GetAll();
+            var orderCode = string.Empty;
+            if (orders.Any())
+            {
+                orderCode = $"OS-{orders.Count()}";
+            }
+            else
+                orderCode = $"OS-1";
+
+            var order = new Order
+            {
+                OrderCode = orderCode,
+                SenderName = orderModel.Sender.Name,
+                SenderPhone = orderModel.Sender.Phone,
+                ReceiverName = orderModel.Receiver.Name,
+                ReceiverPhone = orderModel.Receiver.Phone,
+                ReveiverAddress = orderModel.Receiver.Address,
+                Weight = orderModel.Package.Weight,
+                Depth = orderModel.Package.Depth,
+                Height = orderModel.Package.Height,
+                Breadth = orderModel.Package.Breadth,
+                Departure = orderModel.Package.From,
+                Arrival = orderModel.Package.To,
+                Time = orderModel.Package.Time,
+                ToTal = orderModel.Package.Weight,
+                Id = Guid.NewGuid()
+            };
+
+            _orderRepository.Add(order);
+            _unitOfWork.Commit();
+        }
+
+         
         public OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel)
         {
             var result = new OrderResultModel
