@@ -13,7 +13,6 @@ namespace NC.OS.Data.Configurations
         {
             Property(u => u.Username).IsRequired().HasMaxLength(100);
             Property(u => u.Password).IsRequired().HasMaxLength(100);
-          
         }
     }
 }

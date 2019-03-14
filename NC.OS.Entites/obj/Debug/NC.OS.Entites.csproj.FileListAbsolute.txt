@@ -3,3 +3,8 @@ C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\bin\Debug\NC.OS.Entites.pd
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Debug\NC.OS.Entites.csproj.CoreCompileInputs.cache
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Debug\NC.OS.Entites.dll
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Debug\NC.OS.Entites.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Entites\bin\Debug\NC.OS.Entites.dll
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Entites\bin\Debug\NC.OS.Entites.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Entites\obj\Debug\NC.OS.Entites.csproj.CoreCompileInputs.cache
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Entites\obj\Debug\NC.OS.Entites.dll
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Entites\obj\Debug\NC.OS.Entites.pdb

@@ -22,26 +22,35 @@ namespace NC.OS.API.Controllers
         }
 
 
-        [Route("estimatePriceAndTotal")]
-        [HttpPost]
-        public HttpResponseMessage GetEstimatePriceAndTotal(OrderModel model)
+        [Route("Estimate")]
+        [HttpGet]
+        public HttpResponseMessage GetEstimatePriceAndTotal(string from, string to, double weight, double height, double depth, double breadth)
         {
             HttpResponseMessage response = null;
 
-            if (ModelState.IsValid)
+            var packageModel = new PackageModel
             {
-                var result = _orderService.GetEstimatePriceAndTotal(model);
+                From = from,
+                To = to,
+                Weight = weight,
+                Breadth = breadth,
+                Depth = depth,
+                Height = height
+            };
 
-                if (result != null)
-                {
-                    response = Request.CreateResponse(HttpStatusCode.OK, result);
-                }
+            var result = _orderService.GetEstimatePriceAndTotal(packageModel);
 
+            if (result != null)
+            {
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+                return response;
             }
-            else
-                response = Request.CreateResponse(HttpStatusCode.BadRequest, new { success = false });
+
+            response = Request.CreateResponse(HttpStatusCode.OK, result);
 
             return response;
         }
+
+
     }
 }

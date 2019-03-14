@@ -29,8 +29,7 @@ namespace NC.OS.API.Controllers
             if (ModelState.IsValid)
             {
                 var result = _userService.Login(user.Username, user.Password);
-                var orderModel = new OrderModel();
-                var order = _orderService.GetEstimatePriceAndTotal(orderModel);
+             
 
                 if (result != null)
                 {

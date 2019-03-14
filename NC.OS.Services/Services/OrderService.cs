@@ -29,14 +29,15 @@ namespace NC.OS.Services.Services
             _unitOfWork = unitOfWork;
         }
 
-        public OrderResultModel GetEstimatePriceAndTotal(OrderModel orderModel)
+        
+        public OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel)
         {
             var result = new OrderResultModel
             {
-                Time = CalculateTime(orderModel.Package.From, orderModel.Package.To)
+                Time = CalculateTime(packageModel.From, packageModel.To)
             };
-            var sizeType = CalculateSize(orderModel.Package.Height, orderModel.Package.Depth, orderModel.Package.Breadth);
-            var price = CalculatePrice(orderModel.Package.Weight, sizeType);
+            var sizeType = CalculateSize(packageModel.Height, packageModel.Depth, packageModel.Breadth);
+            var price = CalculatePrice(packageModel.Weight, sizeType);
             result.Total = price;
 
             return result;

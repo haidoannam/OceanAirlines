@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="OceanAirlines-Web.config Connection String" description="OceanAirlines Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:dbs-oavn.database.windows.net,1433;Initial Catalog=db-oavn1016;User ID=admin-oavn;Password=oceanicFlyAway16" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\HaiDoan\\Desktop\\CES\\Code\\NC\.OS\\NC\.OS\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OceanAirlines']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\HaiDoan\\Desktop\\CES\\Code\\BackEnd\\NC\.OS\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OceanAirlines']/@connectionString" />
   </parameter>
 </parameters>
