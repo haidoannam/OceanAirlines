@@ -19,16 +19,16 @@ namespace NC.OS.Entites
         public string ReceiverPhone { get; set; }
         public string ReveiverAddress { get; set; }
 
-        public double Weight { get; set; }
-        public double Depth { get; set; }
-        public double Breadth { get; set; }
+        public decimal Weight { get; set; }
+        public decimal Depth { get; set; }
+        public decimal Breadth { get; set; }
 
-        public double Height { get; set; }
+        public decimal Height { get; set; }
         public string Departure { get; set; }
 
         public string Arrival { get; set; }
 
-        public double ToTal { get; set; }
+        public decimal ToTal { get; set; }
 
         public int Time { get; set; }
 

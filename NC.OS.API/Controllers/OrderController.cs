@@ -41,7 +41,7 @@ namespace NC.OS.API.Controllers
 
         [Route("Estimate")]
         [HttpGet]
-        public HttpResponseMessage GetEstimatePriceAndTotal(string from, string to, double weight, double height, double depth, double breadth)
+        public HttpResponseMessage GetEstimatePriceAndTotal(string from, string to, decimal weight, decimal height, decimal depth, decimal breadth)
         {
             HttpResponseMessage response = null;
 
@@ -75,6 +75,26 @@ namespace NC.OS.API.Controllers
             HttpResponseMessage response = null;
 
             var result = _orderService.GetAllOrder();
+
+            if (result != null)
+            {
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+                return response;
+            }
+
+            response = Request.CreateResponse(HttpStatusCode.OK, result);
+
+            return response;
+        }
+
+
+        [Route("Detail")]
+        [HttpGet]
+        public HttpResponseMessage GetOrdersDetail(string id)
+        {
+            HttpResponseMessage response = null;
+
+            var result = _orderService.GetOrderDetail(id);
 
             if (result != null)
             {

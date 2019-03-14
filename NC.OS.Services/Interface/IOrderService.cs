@@ -14,5 +14,7 @@ namespace NC.OS.Services.Interface
         IList<OrderViewModel> GetAllOrder();
         OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel);
 
+        OrderModel GetOrderDetail(string id);
+
     }
 }
