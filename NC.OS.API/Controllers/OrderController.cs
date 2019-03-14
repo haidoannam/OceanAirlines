@@ -16,9 +16,11 @@ namespace NC.OS.API.Controllers
     public class OrderController : ApiController
     {
         private readonly IOrderService _orderService;
-        public OrderController(IOrderService orderService)
+        private readonly IPlacesService _placesService;
+        public OrderController(IOrderService orderService, IPlacesService placesService)
         {
             _orderService = orderService;
+            _placesService = placesService;
         }
 
 
@@ -40,6 +42,18 @@ namespace NC.OS.API.Controllers
             }
             else
                 response = Request.CreateResponse(HttpStatusCode.BadRequest, new { success = false });
+
+            return response;
+        }
+
+        [Route("loadAllPlaces")]
+        [HttpGet]
+        public HttpResponseMessage GetAllPlace()
+        {
+            HttpResponseMessage response = null;
+
+            var result = _placesService.LoadAllPlaces();
+            response = Request.CreateResponse(HttpStatusCode.OK, result);
 
             return response;
         }

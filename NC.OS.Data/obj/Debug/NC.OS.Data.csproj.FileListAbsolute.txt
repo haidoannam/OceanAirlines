@@ -12,3 +12,17 @@ C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.C
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CopyComplete
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Debug\NC.OS.Data.dll
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Debug\NC.OS.Data.pdb
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\NC.OS.Data.dll.config
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\NC.OS.Data.dll
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\NC.OS.Data.pdb
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\EntityFramework.dll
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\NC.OS.Entites.dll
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\NC.OS.Entites.pdb
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\EntityFramework.xml
+D:\1_CES\OceanAirlines\NC.OS.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\1_CES\OceanAirlines\NC.OS.Data\obj\Debug\NC.OS.Data.csprojAssemblyReference.cache
+D:\1_CES\OceanAirlines\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CoreCompileInputs.cache
+D:\1_CES\OceanAirlines\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CopyComplete
+D:\1_CES\OceanAirlines\NC.OS.Data\obj\Debug\NC.OS.Data.dll
+D:\1_CES\OceanAirlines\NC.OS.Data\obj\Debug\NC.OS.Data.pdb

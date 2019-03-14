@@ -13,6 +13,8 @@ namespace NC.OS.Model
         public ReceiverModel Receiver { get; set; }
 
         public PackageModel Package { get; set; }
+
+      
     }
 
     public class OrderResultModel
@@ -53,5 +55,11 @@ namespace NC.OS.Model
         public double Depth { get; set; }
 
         public double Breadth { get; set; }
+    }
+
+    public class PlacesModel
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }

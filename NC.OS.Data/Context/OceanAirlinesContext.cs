@@ -21,6 +21,8 @@ namespace NC.OS.Data.Context
         #region Entity Sets
         public IDbSet<User> UserSet { get; set; }
 
+        public IDbSet<Places> PlacesSet { get; set; }
+
         #endregion
 
         public virtual void Commit()
@@ -32,7 +34,9 @@ namespace NC.OS.Data.Context
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new UserConfiguration());
-           
+
+            modelBuilder.Configurations.Add(new PlacesConfiguration());
+
         }
     }
 }
