@@ -72,4 +72,9 @@ namespace NC.OS.Model
 
         public int Time { get; set; }
     }
+    public class PlacesModel
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
+    }
 }

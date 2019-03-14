@@ -16,9 +16,12 @@ namespace NC.OS.API.Controllers
     public class OrderController : ApiController
     {
         private readonly IOrderService _orderService;
-        public OrderController(IOrderService orderService)
+        private readonly IPlacesService _placesService;
+
+        public OrderController(IOrderService orderService, IPlacesService placesService)
         {
             _orderService = orderService;
+            _placesService = placesService;
         }
 
         [Route("create")]
@@ -29,7 +32,7 @@ namespace NC.OS.API.Controllers
 
             if (ModelState.IsValid)
             {
-                 _orderService.SaveOrder(model);
+                _orderService.SaveOrder(model);
 
                 response = Request.CreateResponse(HttpStatusCode.OK, new { success = true });
             }
@@ -95,6 +98,25 @@ namespace NC.OS.API.Controllers
             HttpResponseMessage response = null;
 
             var result = _orderService.GetOrderDetail(id);
+
+            if (result != null)
+            {
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+                return response;
+            }
+
+            response = Request.CreateResponse(HttpStatusCode.OK, result);
+
+            return response;
+        }
+
+        [Route("loadAllPlaces")]
+        [HttpGet]
+        public HttpResponseMessage GetAllPlace()
+        {
+            HttpResponseMessage response = null;
+
+            var result = _placesService.LoadAllPlaces();
 
             if (result != null)
             {

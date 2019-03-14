@@ -26,3 +26,17 @@ C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Data\obj\Debug\NC.OS.Data.csproj
 C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CopyComplete
 C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Data\obj\Debug\NC.OS.Data.dll
 C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Data\obj\Debug\NC.OS.Data.pdb
+D:\01\demo\NC.OS.Data\bin\Debug\NC.OS.Data.dll.config
+D:\01\demo\NC.OS.Data\bin\Debug\NC.OS.Data.dll
+D:\01\demo\NC.OS.Data\bin\Debug\NC.OS.Data.pdb
+D:\01\demo\NC.OS.Data\bin\Debug\EntityFramework.dll
+D:\01\demo\NC.OS.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\01\demo\NC.OS.Data\bin\Debug\NC.OS.Entites.dll
+D:\01\demo\NC.OS.Data\bin\Debug\NC.OS.Entites.pdb
+D:\01\demo\NC.OS.Data\bin\Debug\EntityFramework.xml
+D:\01\demo\NC.OS.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\01\demo\NC.OS.Data\obj\Debug\NC.OS.Data.csprojAssemblyReference.cache
+D:\01\demo\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CoreCompileInputs.cache
+D:\01\demo\NC.OS.Data\obj\Debug\NC.OS.Data.csproj.CopyComplete
+D:\01\demo\NC.OS.Data\obj\Debug\NC.OS.Data.dll
+D:\01\demo\NC.OS.Data\obj\Debug\NC.OS.Data.pdb
