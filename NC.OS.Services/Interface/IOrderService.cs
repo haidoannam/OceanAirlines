@@ -11,6 +11,7 @@ namespace NC.OS.Services.Interface
     {
         void SaveOrder(OrderModel orderModel);
 
+        IList<OrderViewModel> GetAllOrder();
         OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel);
 
     }

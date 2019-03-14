@@ -23,8 +23,16 @@ namespace NC.OS.Model
 
     public class OrderViewModel
     {
-        public double Total { get; set; }
-        public double Time { get; set; }
+        public string Id { get; set; }
+
+        public string OrderCode { get; set; }
+
+        public string SenderName { get; set; }
+
+        public string From { get; set; }
+
+        public string To { get; set; }
+
     }
 
     public class SenderModel

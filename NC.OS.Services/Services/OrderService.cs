@@ -63,7 +63,19 @@ namespace NC.OS.Services.Services
             _unitOfWork.Commit();
         }
 
-         
+         public IList<OrderViewModel> GetAllOrder()
+        {
+            var result = _orderRepository.GetAll().Select(x => new OrderViewModel
+            {
+                From = x.Departure,
+                To = x.Arrival,
+                OrderCode = x.OrderCode,
+                Id = x.Id.ToString(),
+                SenderName = x.SenderName
+            });
+
+            return result.ToList();
+        }
         public OrderResultModel GetEstimatePriceAndTotal(PackageModel packageModel)
         {
             var result = new OrderResultModel

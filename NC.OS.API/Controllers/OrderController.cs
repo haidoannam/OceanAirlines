@@ -68,6 +68,23 @@ namespace NC.OS.API.Controllers
             return response;
         }
 
+        [Route("All")]
+        [HttpGet]
+        public HttpResponseMessage GetAllOrders()
+        {
+            HttpResponseMessage response = null;
 
+            var result = _orderService.GetAllOrder();
+
+            if (result != null)
+            {
+                response = Request.CreateResponse(HttpStatusCode.OK, result);
+                return response;
+            }
+
+            response = Request.CreateResponse(HttpStatusCode.OK, result);
+
+            return response;
+        }
     }
 }
