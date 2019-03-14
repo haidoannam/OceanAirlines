@@ -1,0 +1,14 @@
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\NC.OS.Data.dll.config
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\NC.OS.Data.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\NC.OS.Data.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\EntityFramework.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\NC.OS.Entites.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\NC.OS.Entites.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\EntityFramework.xml
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Release\NC.OS.Data.csprojAssemblyReference.cache
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Release\NC.OS.Data.csproj.CoreCompileInputs.cache
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Release\NC.OS.Data.csproj.CopyComplete
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Release\NC.OS.Data.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Data\obj\Release\NC.OS.Data.pdb

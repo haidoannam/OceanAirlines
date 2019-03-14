@@ -1,0 +1,6 @@
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\bin\Release\NC.OS.Entites.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\bin\Release\NC.OS.Entites.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Release\NC.OS.Entites.csprojAssemblyReference.cache
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Release\NC.OS.Entites.csproj.CoreCompileInputs.cache
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Release\NC.OS.Entites.dll
+C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Entites\obj\Release\NC.OS.Entites.pdb
