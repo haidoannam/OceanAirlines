@@ -29,8 +29,6 @@ namespace NC.OS.API.Controllers
             if (ModelState.IsValid)
             {
                 var result = _userService.Login(user.Username, user.Password);
-             
-
                 if (result != null)
                 {
                     response = Request.CreateResponse(HttpStatusCode.OK, new { success = true });

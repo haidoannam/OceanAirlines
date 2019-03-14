@@ -3,3 +3,9 @@ C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Model\bin\Release\NC.OS.Model.pdb
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Model\obj\Release\NC.OS.Model.csproj.CoreCompileInputs.cache
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Model\obj\Release\NC.OS.Model.dll
 C:\Users\HaiDoan\Desktop\CES\Code\NC.OS\NC.OS.Model\obj\Release\NC.OS.Model.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\bin\Release\NC.OS.Model.dll
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\bin\Release\NC.OS.Model.pdb
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\obj\Release\NC.OS.Model.csprojAssemblyReference.cache
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\obj\Release\NC.OS.Model.csproj.CoreCompileInputs.cache
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\obj\Release\NC.OS.Model.dll
+C:\Users\HaiDoan\Desktop\CES\Code\BackEnd\NC.OS.Model\obj\Release\NC.OS.Model.pdb
